@@ -2,7 +2,7 @@
 
 ## Deployment
 
-View deployed app here []()
+View deployed app here [Uday-Goel-Q-Estate-Frontend](uday-goel-q-estate-frontend.netlify.app)
 
 ## Run Locally
 
