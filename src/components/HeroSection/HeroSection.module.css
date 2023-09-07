@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.heroSection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.5)), url("/public/assets/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroTitle {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 50vw;
+    font-weight: 300;
+    font-size: 3vw;
+    line-height: 1.5;
+    color: rgb(235, 235, 235);
+}
+
+.letterAnimation {
+    opacity: 0;
+    animation: appearAnimation 2s forwards
+}
+
+@keyframes appearAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply individual animation for each letter */
+.letterAnimation span {
+    display: inline-block;
+    animation: letterAnimationframe 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes letterAnimationframe {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

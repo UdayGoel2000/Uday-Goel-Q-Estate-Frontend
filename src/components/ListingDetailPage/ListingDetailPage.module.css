@@ -1,0 +1,75 @@
+.detailPageContainer {
+    margin-top: 100px !important;
+    width: 80vw;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10%;
+    margin-bottom: 100px;
+}
+
+.imageContainer img {
+    object-fit: cover;
+    width: 600px;
+}
+
+.title {
+    margin-right: 20px;
+}
+
+.agentDetailsContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+}
+
+.agentTitle {
+    font-size: 20px;
+}
+
+.contactButton {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.propertyDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.propertyDetails h1 {
+    margin: 0;
+    font-size: 4vw;
+}
+
+.errorMessage {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+@media only screen and (max-width: 1092px) {
+    .detailPageContainer {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: flex-start;
+        gap: 2%;
+    }
+
+    .imageContainer img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
